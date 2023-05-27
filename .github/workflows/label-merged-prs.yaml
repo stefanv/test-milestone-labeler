@@ -1,0 +1,9 @@
+on:
+  pull_request:
+    types:
+      - closed
+
+jobs:
+  milestone_pr:
+    steps:
+      - uses: stefanv/attach-next-milestone@main
