@@ -1,3 +1,5 @@
+name: Milestone
+
 on:
   pull_request_target:
     types:
@@ -5,7 +7,7 @@ on:
 
 jobs:
   milestone_pr:
-    name: Milestone PR
+    name: Attach to PR
     runs-on: ubuntu-latest
     steps:
       - uses: scientific-python/attach-next-milestone@main
