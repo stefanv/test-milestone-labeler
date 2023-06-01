@@ -5,5 +5,7 @@ on:
 
 jobs:
   milestone_pr:
+    name: Milestone PR
+    runs-on: ubuntu-latest
     steps:
       - uses: stefanv/attach-next-milestone@main
