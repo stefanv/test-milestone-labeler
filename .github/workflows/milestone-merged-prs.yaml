@@ -1,5 +1,5 @@
 on:
-  pull_request_target:
+  pull_request:
     types:
       - closed
 
@@ -10,4 +10,4 @@ jobs:
     steps:
       - uses: stefanv/attach-next-milestone@main
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.MILESTONE_LABELER_TOKEN }}
