@@ -1,5 +1,5 @@
 on:
-  pull_request:
+  pull_request_target:
     types:
       - closed
 
@@ -10,4 +10,5 @@ jobs:
     steps:
       - uses: scientific-python/attach-next-milestone@main
         with:
-          token: ${{ secrets.MILESTONE_LABELER_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+#          token: ${{ secrets.MILESTONE_LABELER_TOKEN }}
