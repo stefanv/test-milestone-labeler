@@ -10,5 +10,4 @@ jobs:
     steps:
       - uses: scientific-python/attach-next-milestone@main
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-#          token: ${{ secrets.MILESTONE_LABELER_TOKEN }}
+          token: ${{ secrets.MILESTONE_LABELER_TOKEN }}
