@@ -8,6 +8,6 @@ jobs:
     name: Milestone PR
     runs-on: ubuntu-latest
     steps:
-      - uses: stefanv/attach-next-milestone@main
+      - uses: scientific-python/attach-next-milestone@main
         with:
           token: ${{ secrets.MILESTONE_LABELER_TOKEN }}
