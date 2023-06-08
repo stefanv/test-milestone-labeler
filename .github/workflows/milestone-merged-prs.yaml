@@ -13,3 +13,5 @@ jobs:
       - uses: scientific-python/attach-next-milestone@main
         with:
           token: ${{ secrets.MILESTONE_LABELER_TOKEN }}
+          force: true
+
